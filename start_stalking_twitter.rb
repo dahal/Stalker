@@ -21,7 +21,7 @@ streaming(endpoint: :filter, locations:"-122.75,36.8,-121.75,37.8") do
     tweety = tweet.text
     puts "Not Tracking: #{username.colorize(:blue)} :- #{tweety.colorize(:yellow)}"
 
-    if tweet.text.split.join(" ") =~ keywords
+    if tweet.text.split.join(" ") =~ /#{keywords}/i
       puts "Now Tracking: #{username.colorize(:red)} :- #{tweety.colorize(:green)}"
       notifier = Slack::Notifier.new slack_webhook_url
       notifier.ping "#{tweet.uri.to_s}"
