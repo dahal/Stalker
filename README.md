@@ -2,6 +2,7 @@
 ---
 Stalk tweets by geo location and keywords and slack them.
 
+![Tweets](https://raw.githubusercontent.com/dahal/Stalker/master/twitter_terminal.gif)
 
 ##### Check it Out
 
