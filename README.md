@@ -21,5 +21,4 @@ Stalk tweets by geo location and keywords and slack them.
 ~> echo 'SECRET=twitter-secret' > .env
 ~> echo 'TOKEN=twitter-token' > .env
 ~> echo 'CONSUMER_KEY=twitter-consumer-key' > .env
-~> echo 'KEYWORDS=regex' > .env #without /  /
 ```
